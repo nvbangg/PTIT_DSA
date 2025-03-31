@@ -46,10 +46,11 @@ Các dãy con thoả mãn điều kiện tìm được liệt kê trên màn hì
 
 ### CTDL_003 - PHƯƠNG ÁN TỐI ƯU
 
-Cho a<sub>i</sub>, c<sub>i</sub>, W, N (i =1, 2,..,N; N£100) là những số nguyên dương và tập hợp
+Cho a<sub>i</sub>, c<sub>i</sub>, W, N (i =1, 2,..,N; N<=100) là những số nguyên dương và tập hợp
+
 ![CTDL_003(1)](image/CTDL_003(1).png)
 
-Hãy viết chương trình tìm phương án tối ưu XOPT =(x<sub>1</sub>,x<sub>2</sub>,..,x<sub>N</sub>) và giá trị tối ưu FOPT=F(XOPT) của hàm mục tiêu
+Hãy viết chương trình tìm phương án tối ưu XOPT =(x<sub>1</sub>,x<sub>2</sub>,..,x<sub>N</sub>) và giá trị tối ưu FOPT=F(XOPT) của hàm mục tiêu 
 ![CTDL_003](image/CTDL_003.png)
 
 Dữ liệu vào cho bởi file data.in theo khuôn dạng sau:
