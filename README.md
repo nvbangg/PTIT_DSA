@@ -51,6 +51,7 @@ Cho a<sub>i</sub>, c<sub>i</sub>, W, N (i =1, 2,..,N; N<=100) là những số n
 ![CTDL_003(1)](image/CTDL_003(1).png)
 
 Hãy viết chương trình tìm phương án tối ưu XOPT =(x<sub>1</sub>,x<sub>2</sub>,..,x<sub>N</sub>) và giá trị tối ưu FOPT=F(XOPT) của hàm mục tiêu 
+
 ![CTDL_003](image/CTDL_003.png)
 
 Dữ liệu vào cho bởi file data.in theo khuôn dạng sau:
@@ -1559,6 +1560,7 @@ Cho số nguyên dương N. Nhiệm vụ của bạn là tìm số K nhỏ nhấ
 Cho một xâu s. Xâu F(s) được xác định bằng cách ghép xâu xâu s ban đầu với xâu s sau khi đã được quay vòng sang bên phải 1 kí tự (kí tự cuối cùng của s được chuyển lên đầu).
 
 Thực hiện liên tiếp các bước cộng xâu như trên với xâu mới thu được, ta có được xâu X.
+
 ![DSA02021](image/DSA02021.png)
 
 Nhiệm vụ của bạn là hãy xác định kí tự thứ N trong xâu X là kí tự nào?
@@ -3926,7 +3928,10 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 
 ### DSA_P035 - HÀNH TRÌNH DU LỊCH - 2
 
-Công ty X chuyên tổ chức các hành trình du lịch trong vùng lãnh thổ gồm N điểm du lịch trọng điểm, được đánh số từ 1 tới N. Hệ thống giao thông trong vùng gồm M tuyến đường một chiều khác nhau, tuyến đường thứ j (j = 1,2,…M) cho phép đi từ địa điểm uj tới địa điểm vj với chi phí đi lại là số nguyên dương c (uj, vj). Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm K địa điểm du lịch s1, s2, …, sk (khác địa điểm 1) và sau đó quay về địa điểm xuất phát 1 với tổng chi phí là nhỏ nhất.![DSA_P035](image/DSA_P035.png)
+Công ty X chuyên tổ chức các hành trình du lịch trong vùng lãnh thổ gồm N điểm du lịch trọng điểm, được đánh số từ 1 tới N. Hệ thống giao thông trong vùng gồm M tuyến đường một chiều khác nhau, tuyến đường thứ j (j = 1,2,…M) cho phép đi từ địa điểm uj tới địa điểm vj với chi phí đi lại là số nguyên dương c (uj, vj). Công ty vừa nhận được một hợp đồng yêu cầu xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm K địa điểm du lịch s1, s2, …, sk (khác địa điểm 1) và sau đó quay về địa điểm xuất phát 1 với tổng chi phí là nhỏ nhất.
+
+![DSA_P035](image/DSA_P035.png)
+
 Yêu cầu: Cho thông tin về hệ thống giao thông và k địa điểm du lịch s1, s2, …, sk. Hãy xây dựng một hành trình du lịch xuất phát từ địa điểm du lịch 1 và đi thăm k địa điểm, sau đó quay về địa điểm du lịch 1 với tổng chi phí nhỏ nhất.
 
 **Đầu vào:**
@@ -3986,7 +3991,10 @@ Với mỗi test, in ra đáp án tìm được trên một dòng.
 
 ### DSA_P040 - CHỌN Ô - 2
 
-Cho một bảng kích thước 4 x N (gồm N cột). Mỗi ô (i, j) có điểm bằng A[i][j]. Bạn cần chọn một tập hợp các ô sao cho điểm đạt được là lớn nhất, và trong các ô được chọn, không có 2 ô nào có chung cạnh.![DSA_P040](image/DSA_P040.png)
+Cho một bảng kích thước 4 x N (gồm N cột). Mỗi ô (i, j) có điểm bằng A[i][j]. Bạn cần chọn một tập hợp các ô sao cho điểm đạt được là lớn nhất, và trong các ô được chọn, không có 2 ô nào có chung cạnh.
+
+![DSA_P040](image/DSA_P040.png)
+
 Ví dụ với bảng có N = 3 như hình vẽ trên. Cách chọn tập tối ưu là (3,1), (1, 2), (4, 2) và (3, 3).
 
 **Đầu vào:**
@@ -4329,7 +4337,10 @@ Một chiếc cầu thang có N bậc. Mỗi bước, bạn được phép bư�
 
 ### DSA05014 - CATALAN NUMBER
 
-Catalan Number là dãy số thỏa mãn biểu thức:![DSA05014](image/DSA05014.png)
+Catalan Number là dãy số thỏa mãn biểu thức:
+
+![DSA05014](image/DSA05014.png)
+
 Dưới đây là một số số Catalan với n=0, 1,2,.. : 1, 1, 2, 5, 14, 42, 132, 429,… Cho số tự nhiên N. Nhiệm vụ của bạn là đưa ra số Catalan thứ N.
 **Đầu vào:**
 - Dòng đầu tiên đưa vào số lượng bộ test T.
@@ -6842,6 +6853,7 @@ Trong giấc mơ, Tí thấy mình bị lạc trên hòn đảo với cư dân x
 Tí muốn tấm biển quảng cáo của mình thật đặc biệt, nên Tí đã chọn nhất định nó sẽ là hình vuông. Không có eke, thước, dây, … nên Tí phải dựa vào các miếng gỗ ban đầu để căn nhát cưa. Việc cưa theo chiều dọc rất dễ dàng, nhưng theo chiều ngang, Tí chỉ có thể cưa theo một đường thẳng trùng với một cạnh của miếng gỗ nào đó.
 
 Các bạn hãy giúp Tí tính thử xem tấm biển quảng cáo của Tí có kích thước lớn nhất bằng bao nhiêu (kích thước ở đây là độ dài cạnh hình vuông).
+
 ![DSA07024](image/DSA07024.png)
 
 **Đầu vào:**
@@ -7590,6 +7602,7 @@ S##
 ### DSA08016 - HEXGAME
 
 HEXGAME là một trò chơi xếp hình gồm 10 miếng ghép hình lục giác đều, trên mỗi miếng ghép được điền một số nguyên, có 8 miếng được điền số  từ 1 đến 8 và có hai miếng điền số 0. Các miếng liên kết với nhau tạo thành lưới tổ ong. Ban đầu các miếng ghép ở vị trí như hình vẽ. Tại mỗi bước, chọn một miếng ghép có đúng 6 miếng ghép kề cạnh làm tâm, rồi xoay một nấc 6 miếng ghép kề cạnh đó theo chiều kim đồng hồ. Như vậy chỉ có hai cách chọn tâm, đó là chọn tâm bên trái và chọn tâm bên phải.
+
 ![DSA08016](image/DSA08016.png)
 
 Yêu cầu: Cho một trạng thái của trò chơi (nhận được sau một dãy biến đổi từ trạng thái ban đầu), hãy tính số phép biến đổi ít nhất để đưa về trạng thái ban đầu.
@@ -7788,6 +7801,7 @@ Nếu không tìm được số nào, in ra -1.
 ### DSA08025 - QUÂN MÃ
 
 Cho một quân mã trên bàn cờ vua tại vị trí ST. Nhiệm vụ của bạn là hãy tìm số bước di chuyển ít nhất để đưa quân mã tới vị trí EN.
+
 ![DSA08025](image/DSA08025.png)
 
 **Đầu vào:**
@@ -7825,6 +7839,7 @@ f6 f6
 ### DSA08029 - QUAY HÌNH VUÔNG
 
 Có một chiếc bảng hình chữ nhật với 6 miếng ghép, trên mỗi miếng ghép được điền một số nguyên trong khoảng từ 1 đến 6. Tại mỗi bước, chọn một hình vuông (bên trái hoặc bên phải), rồi quay theo chiều kim đồng hồ.
+
 ![DSA08029](image/DSA08029.png)
 
 Yêu cầu: Cho một trạng thái của bảng, hãy tính số phép biến đổi ít nhất để đưa bảng đến trạng thái đích.
@@ -8535,6 +8550,7 @@ YES
 ###	DSA09028 - TÔ MÀU ĐỒ THỊ
 
 Một trong những bài toán kinh điển của lý thuyết đồ thị là bài toán Tô màu đồ thị. Bài toán được phát biểu như sau: Cho đồ thị vô hướng G =<V, E> được biểu diễn dưới dạng danh sách cạnh và số M. Nhiệm vụ của bạn là kiểm tra xem đồ thị có thể tô màu các đỉnh bằng nhiều nhất M màu sao cho hai đỉnh kề nhau đều có màu khác nhau hay không?
+
 ![DSA09028](image/DSA09028.png)
 
 **Đầu vào:**
@@ -8596,6 +8612,7 @@ NO
 ###	DSA09030 - ĐỒ THỊ HAI PHÍA
 
 Đồ thị hai phía là một đồ thị đặc biệt, trong đó tập các đỉnh có thể được chia thành hai tập không giao nhau thỏa mãn điều kiện không có cạnh nối hai đỉnh bất kỳ thuộc cùng một tập. Cho đồ thị N đỉnh và M cạnh, bạn hãy kiểm tra đồ thị đã cho có phải là một đồ thị hai phía hay không?
+
 ![DSA09030](image/DSA09030.png)
 
 **Đầu vào:**
@@ -8637,6 +8654,7 @@ Dòng đầu tiên gồm 3 số nguyên dương N, K và M (1 ≤  N ≤  100, K
 
 **Đầu ra:**
 In ra số cặp chú cừu bị xa cách tìm được.
+
 ![DSA09031](image/DSA09031.png)
 
 **input:**
@@ -9224,6 +9242,7 @@ Cho một bảng số kích thước N x M. Chi phí khi đi qua ô (i,j) bằng
 ###	DSA10012 - ĐƯỜNG ĐI TRUNG BÌNH
 
 Cho một đồ thị có hướng gồm N đỉnh và M cạnh. Nhiệm vụ của bạn là hãy tính khoảng cách trung bình ngắn nhất giữa hai node bất kì nếu như chúng liên thông với nhau. Input đảm bảo rằng trong một nhóm liên thông, nếu như u đi tới được v thì v cũng đi tới được v với mọi cặp u, v.
+
 ![DSA10012](image/DSA10012.png)
 
 **Đầu vào:**
@@ -9356,6 +9375,7 @@ Cho đồ thị có trọng số G=< V,E > được biểu diễn dưới dạng
 ###	DSA11001 - CÂY BIỂU THỨC 1
 
 Cây biểu thức là một cây nhị phân trong đó mỗi node trung gian là một phép toán, mỗi node lá là một toán hạng. Ví dụ với biểu thức P = 3 + ((5+9)*2) sẽ được biểu diễn như cây dưới đây.
+
 ![DSA11001](image/DSA11001.png)
 
 Đối với cây biểu thức, duyệt theo thứ tự trước ta sẽ được biểu thức tiền tố, duyệt theo thứ tự sau ta sẽ được biểu thức hậu tố, duyệt theo thứ tự giữa ta được biểu thức trung tố. Chú ý, cây biểu thức luôn là cây nhị phân đầy (mỗi node trung gian đều có hai node con).
@@ -9386,6 +9406,7 @@ w * l - r + b
 ###	DSA11002 - CÂY BIỂU THỨC 2
 
 Cho một cây biểu thức là một cây nhị phân đầy đủ bao gồm các phép toán +, -, \*. / và một số toán hạng có giá trị nguyên. Nhiệm vụ của bạn là hãy tính toán giá trị biểu thức được biểu diễn trên cây nhị phân đầy đủ. Ví dụ với cây dưới đây là biểu diễn của biểu thức P = ( (5\*4) + (100-20)) sẽ cho ta giá trị là 100.
+
 ![DSA11002](image/DSA11002.png)
 
 **Đầu vào:**
@@ -9453,6 +9474,7 @@ Postorder: 4 5 2 6 3 1
 ###	DSA11004 - DUYỆT CÂY THEO MỨC
 
 Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo Level-order. Phép duyệt level-order trên cây là phép thăm node theo từng mức của cây. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt level-order: 20  8  22  4  12  10  14.
+
 ![DSA11004](image/DSA11004.png)
 
 **Đầu vào:**
@@ -9485,6 +9507,7 @@ Cho hai mảng là phép duyệt Inorder và Level-order, nhiệm vụ của b�
 Inorder : 4 8 10 12 14 20 22
 
 Level order: 20 8 22 4 12 10 14
+
 ![DSA11005](image/DSA11005.png)
 
 **Đầu vào:**
@@ -9515,6 +9538,7 @@ Level order: 20 8 22 4 12 10 14
 ###	DSA11006 - DUYỆT CÂY KIỂU XOẮN ỐC
 
 Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc (spiral-order). Phép. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt spiral-order: 1 2 3  4 5 6 7.
+
 ![DSA11006](image/DSA11006.png)
 
 **Đầu vào:**
@@ -9543,6 +9567,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc
 ###	DSA11008 - KIỂM TRA NODE LÁ
 
 Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem tất cả các node lá của cây có cùng một mức hay không? Ví dụ với cây dưới đây sẽ cho ta kết quả là Yes.
+
 ![DSA11008](image/DSA11008.png)
 
 **Đầu vào:**
@@ -9659,6 +9684,7 @@ Cho hai cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị
 ###	DSA11014 - TỔNG NODE LÁ BÊN PHẢI
 
 Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả các node lá bên phải trên cây? Ví dụ với cây dưới đây ta có kết quả là 2.
+
 ![DSA11014](image/DSA11014.png)
 
 **Đầu vào:**
@@ -9687,6 +9713,7 @@ Cho cây nhị phân, nhiệm vụ của bạn là tính tổng của tất cả
 ###	DSA11015 - TỔNG LỚN NHẤT
 
 Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ của bạn là tìm tổng lớn nhất từ một node lá này sang một node lá khác? Ví dụ với cây dưới đây ta có tổng lớn nhất là 27.
+
 ![DSA11015](image/DSA11015.png)
 
 **Đầu vào:**
@@ -9712,6 +9739,7 @@ Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ củ
 ###	DSA11016 - BIẾN ĐỔI SANG CÂY NHỊ PHÂN TÌM KIẾM
 
 Cho cây nhị phân, nhiệm vụ của bạn là dịch chuyển cây nhị phân thành cây nhị phân tìm kiếm. Phép dịch chuyển phải bảo toàn được cấu trúc cây nhị phân ban đầu. Ví dụ dưới đây sẽ minh họa phép dịch chuyển:
+
 ![DSA11016](image/DSA11016.png)
 
 **Đầu vào:**
@@ -10071,6 +10099,7 @@ Cho một cây có N node, gốc tại  1. Độ cao của một node u được
 ###	DSA11029 - ĐƯỜNG ĐI TỚI NODE LÁ
 
 Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra đường đi từ node gốc tới nó.
+
 ![DSA11029](image/DSA11029.png)
 
 **Đầu vào:**
@@ -10106,6 +10135,7 @@ Cho một cây có N node, gốc tại 1. Với mỗi node lá, bạn hãy in ra
 ###	DSA11030 - KHOẢNG CÁCH GIỮA HAI NODE
 
 Cho một cây có N node, gốc tại 1. Có Q truy vấn, mỗi truy vấn yêu cầu bạn tìm khoảng cách giữa hai node u và v.
+
 ![DSA11030](image/DSA11030.png)
 
 **Đầu vào:**
