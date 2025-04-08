@@ -1,56 +1,67 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n, cnt;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
+int n;
 bool a[50][50];
 bool b[100];
-void out()
-{
-    for (int i = 1; i <= 2 * n - 2; ++i)
-        if (b[i])
-            cout << "D";
-        else
-            cout << "R";
-    cout << " ";
-}
+vector<string> v;
+
 void Try(int i, int j)
 {
     if (i == n && j == n)
     {
-        cnt++;
-        out();
+        string s;
+        for (int k = 0; k < 2 * n - 2; ++k)
+            s += (b[k] ? 'D' : 'R');
+        v.push_back(s);
+        return;
     }
     if (a[i + 1][j])
     {
-        b[i + j - 1] = 1;
+        b[i + j - 2] = true;
         Try(i + 1, j);
     }
     if (a[i][j + 1])
     {
-        b[i + j - 1] = 0;
+        b[i + j - 2] = false;
         Try(i, j + 1);
     }
 }
-void TestCase()
+
+void Case()
 {
     cin >> n;
-    cnt = 0;
+    v.clear();
     for (int i = 1; i <= n; ++i)
     {
         for (int j = 1; j <= n; ++j)
+        {
             cin >> a[i][j];
+        }
+    }
+    if (a[1][1] == 0 || a[n][n] == 0)
+    {
+        cout << -1 << endl;
+        return;
     }
     Try(1, 1);
-    if (cnt == 0)
-        cout << -1;
-    cout << endl;
+
+    if (v.empty())
+        cout << -1 << endl;
+    else
+    {
+        sort(v.begin(), v.end());
+        for (const string &s : v)
+            cout << s << " ";
+        cout << endl;
+    }
 }
+
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

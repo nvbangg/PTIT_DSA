@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-void TestCase()
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
+void Case()
 {
     int n, s, k;
     cin >> n >> s >> k;
@@ -24,11 +27,7 @@ void TestCase()
 }
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

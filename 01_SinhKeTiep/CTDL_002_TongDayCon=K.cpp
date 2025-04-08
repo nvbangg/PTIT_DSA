@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 int n, k, cnt;
 vector<int> a, b;
 void solve()
@@ -27,7 +30,7 @@ void Try(int i)
             Try(i + 1);
     }
 }
-int main()
+int Case()
 {
     cin >> n >> k;
     a.resize(n);
@@ -36,4 +39,10 @@ int main()
         cin >> i;
     Try(0);
     cout << cnt;
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
+    return 0;
 }

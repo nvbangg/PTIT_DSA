@@ -1,7 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 //! CHIA HẾT CHO 2
-void TestCase()
+void Case()
 {
     int n;
     cin >> n;
@@ -11,18 +14,16 @@ void TestCase()
         if (n % i == 0)
         {
             if (i % 2 == 0)
-                cnt++; 
+                cnt++;
             if ((n / i) % 2 == 0 && i * i != n)
-                cnt++; 
+                cnt++;
         }
     }
     cout << cnt << endl;
 }
 int main()
 {
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

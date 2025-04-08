@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
 
 // Hàm sinh xâu nhị phân thuận nghịch
 void sinh(int n)
@@ -28,10 +30,16 @@ void sinh(int n)
     }
 }
 
-int main()
+int Case()
 {
     int n;
     cin >> n;
     sinh(n);
+    return 0;
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
     return 0;
 }

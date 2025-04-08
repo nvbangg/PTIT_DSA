@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 //! PHÂN TÍCH THỪA SỐ NGUYÊN TỐ
 vector<pair<int, int>> thua_so(int n)
 {
@@ -19,7 +22,7 @@ vector<pair<int, int>> thua_so(int n)
         res.push_back({n, 1});
     return res;
 }
-int main()
+int Case()
 {
     int T;
     cin >> T;
@@ -33,5 +36,11 @@ int main()
             cout << res[i].first << "(" << res[i].second << ") ";
         cout << endl;
     }
+    return 0;
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
     return 0;
 }

@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 int tuantu(vector<int> a, int x)
 {
     int n = a.size();
@@ -13,7 +16,7 @@ int tuantu(vector<int> a, int x)
     }
     return cnt;
 }
-void TestCase()
+void Case()
 {
     int n, tmp, check = 0;
     cin >> n;
@@ -36,9 +39,7 @@ void TestCase()
 }
 int main()
 {
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

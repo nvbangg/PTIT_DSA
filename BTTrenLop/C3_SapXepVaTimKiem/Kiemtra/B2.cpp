@@ -1,12 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 bool cmp(int u, int v)
 {
     if (u < 0 && v >= 0)
         return 1;
     return 0;
 }
-void TestCase()
+void Case()
 {
     int n, m;
     cin >> n >> m;
@@ -37,11 +40,7 @@ void TestCase()
 }
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

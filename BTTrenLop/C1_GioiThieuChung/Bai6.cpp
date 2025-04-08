@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 //! SỐ TĂNG GIẢM
 bool isTang(string a)
 {
@@ -15,7 +18,7 @@ bool isGiam(string a)
             return 0;
     return 1;
 }
-void TestCase()
+void Case()
 {
     string a;
     cin >> a;
@@ -23,9 +26,7 @@ void TestCase()
 }
 int main()
 {
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

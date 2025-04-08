@@ -1,12 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
 
-void TestCase()
+void Case()
 {
     string s;
     cin >> s;
     int i = s.size() - 1;
-    while(s[i] == '1' && i >= 0)
+    while (s[i] == '1' && i >= 0)
     {
         s[i] = '0';
         i--;
@@ -17,9 +19,7 @@ void TestCase()
 }
 int main()
 {
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

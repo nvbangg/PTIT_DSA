@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void TestCase()
+void Case()
 {
     int n, k;
     cin >> n >> k;
@@ -18,6 +18,6 @@ int main()
     int T;
     cin >> T;
     while (T--)
-        TestCase();
+        Case();
     return 0;
 }

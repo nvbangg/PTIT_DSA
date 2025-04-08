@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 void bubbleSort(vector<int> &a)
 {
     int n = a.size();
@@ -23,7 +26,7 @@ void bubbleSort(vector<int> &a)
     }
 }
 
-int main()
+int Case()
 {
     int n;
     cin >> n;
@@ -31,4 +34,10 @@ int main()
     for (int &x : a)
         cin >> x;
     bubbleSort(a);
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
+    return 0;
 }

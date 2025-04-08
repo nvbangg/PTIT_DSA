@@ -1,9 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-//!ƯỚC SỐ CHUNG LỚN NHẤT VÀ BỘI SỐ CHUNG NHỎ NHẤT
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
+//! ƯỚC SỐ CHUNG LỚN NHẤT VÀ BỘI SỐ CHUNG NHỎ NHẤT
 int gcd(int a, int b)
 {
-    while(b)
+    while (b)
     {
         int tmp = b;
         b = a % b;
@@ -11,7 +14,7 @@ int gcd(int a, int b)
     }
     return a;
 }
-void TestCase()
+void Case()
 {
     int a, b;
     cin >> a >> b;
@@ -20,9 +23,7 @@ void TestCase()
 }
 int main()
 {
-    int T;
-    cin >> T;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

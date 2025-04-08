@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 bool check(string &a)
 {
     if (a[a.size() - 1] != '6')
@@ -26,7 +29,7 @@ void xau_nhiphan(int n)
         a[i] = '8';
     }
 }
-void TestCase()
+void Case()
 {
     int n;
     cin >> n;
@@ -34,8 +37,7 @@ void TestCase()
 }
 int main()
 {
-    int T = 1;
-    while (T--)
-        TestCase();
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
     return 0;
 }

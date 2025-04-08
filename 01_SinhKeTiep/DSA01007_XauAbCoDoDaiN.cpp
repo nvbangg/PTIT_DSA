@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 void xau_nhiphan(int n)
 {
     vector<char> a(n, 'A');
@@ -16,20 +19,16 @@ void xau_nhiphan(int n)
         a[i] = 'B';
     }
 }
-void TestCase()
+void Case()
 {
     int n;
     cin >> n;
     xau_nhiphan(n);
+    cout << "\n";
 }
 int main()
 {
-    int T;
-    cin >> T;
-    while (T--)
-    {
-        TestCase();
-        cout << "\n";
-    }
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    testCase();
     return 0;
 }

@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 //! CHUẨN HÓA 1
 vector<string> chuan_hoa(string &s)
 {
@@ -24,7 +27,7 @@ vector<string> chuan_hoa(string &s)
         x[0] = toupper(x[0]);
     return v;
 }
-void TestCase()
+void Case()
 {
     string s;
     getline(cin, s);
@@ -39,6 +42,6 @@ int main()
     cin >> T;
     cin.ignore();
     while (T--)
-        TestCase();
+        Case();
     return 0;
 }

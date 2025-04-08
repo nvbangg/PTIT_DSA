@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 void tohop(int k, vector<int> b)
 {
 
@@ -14,7 +17,7 @@ void tohop(int k, vector<int> b)
     } while (prev_permutation(a.begin(), a.end()));
 }
 
-int main()
+int Case()
 {
     int n, k;
     cin >> n >> k;
@@ -27,4 +30,10 @@ int main()
     }
     vector<int> b(a.begin(), a.end());
     tohop(k, b);
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
+    return 0;
 }

@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 vector<string> b;
 void insertionSort(vector<int> &a)
 {
@@ -20,7 +23,7 @@ void insertionSort(vector<int> &a)
         b.push_back(buoc);
     }
 }
-int main()
+int Case()
 {
     int n;
     cin >> n;
@@ -30,4 +33,10 @@ int main()
     insertionSort(a);
     for (int i = b.size() - 1; i >= 0; --i)
         cout << b[i] << endl;
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
+    return 0;
 }

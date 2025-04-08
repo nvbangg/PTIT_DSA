@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
 
 int linearSearch(const vector<int> &array, int target)
 {

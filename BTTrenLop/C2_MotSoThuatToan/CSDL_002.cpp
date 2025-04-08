@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
 
 vector<int> A, X;
 int n, k, dem = 0;
@@ -50,7 +52,7 @@ void sinh()
         Ok = false;
 }
 
-int main()
+int Case()
 {
     init();
     while (Ok)
@@ -59,5 +61,11 @@ int main()
         sinh();
     }
     cout << dem << endl;
+    return 0;
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
     return 0;
 }

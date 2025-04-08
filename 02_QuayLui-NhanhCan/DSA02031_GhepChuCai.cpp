@@ -2,6 +2,9 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+#define testCase() ([] { int T; cin >> T; while(T--) Case(); }())
+#define endl '\n'
+
 int n, ok = 1;
 vector<int> a;
 void init()
@@ -49,10 +52,8 @@ bool check()
     return 1;
 }
 
-int main()
+int Case()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
     init();
     while (ok)
     {
@@ -60,4 +61,10 @@ int main()
             result();
         sinh();
     }
+}
+int main()
+{
+    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+    Case();
+    return 0;
 }
